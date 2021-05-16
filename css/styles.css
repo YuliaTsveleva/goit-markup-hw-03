@@ -9,7 +9,7 @@
   --section-background-color: #2f303a;
   --logo-color: #000000;
   --footer-contacts-color: #ffffff99;
-  --accent-backgrount-color: #f5f4fa;
+  --accent-background-color: #f5f4fa;
 }
 
 h1,
@@ -39,6 +39,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -57,7 +71,7 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -66,6 +80,10 @@ body {
 }
 
 /*===header===*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
@@ -245,7 +263,7 @@ body {
 /*===team studio===*/
 
 .team {
-  background-color: var(--accent-backgrount-color);
+  background-color: var(--accent-background-color);
 }
 
 .team-list {
@@ -315,7 +333,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   color: var(--heading-color);
-  background-color: var(--accent-backgrount-color);
+  background-color: var(--accent-background-color);
   cursor: pointer;
 }
 
@@ -337,9 +355,9 @@ body {
 
 .example-signature {
   padding: 20px 24px;
-  border-bottom: 1px solid var(--accent-backgrount-color);
-  border-left: 1px solid var(--accent-backgrount-color);
-  border-right: 1px solid var(--accent-backgrount-color);
+  border-bottom: 1px solid var(--accent-background-color);
+  border-left: 1px solid var(--accent-background-color);
+  border-right: 1px solid var(--accent-background-color);
 }
 
 .example-card {
@@ -359,8 +377,6 @@ body {
   line-height: 1.87;
   color: var(--main-text-color);
 }
-
-/* проверить */
 
 .abbr {
   text-transform: uppercase;
