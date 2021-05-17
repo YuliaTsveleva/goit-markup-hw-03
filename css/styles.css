@@ -85,14 +85,13 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .navigation {
@@ -111,6 +110,7 @@ body {
 
 .contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .header .logo-link {
@@ -163,13 +163,13 @@ body {
 /*===hero studio===*/
 
 .hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
 .hero {
   background-color: var(--section-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -222,8 +222,8 @@ body {
 }
 
 .features-item {
-  padding-top: 30px;
-  padding-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .features-item-title {
@@ -256,8 +256,8 @@ body {
 }
 
 .activity-list-item {
-  padding-top: 30px;
-  padding-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /* ===activity end=== */
@@ -398,9 +398,15 @@ body {
   color: var(--dark-background-text-color);
 }
 
-.address-list-item:first-child {
+address {
   margin-top: 20px;
 }
+
+/* .footer .logo-link {
+  margin-bottom: 20px;
+} */
+
+/* не работает margin-bottom для logo-link в футере, пробовала разные варианты селектора, не могу понять почему */
 
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
